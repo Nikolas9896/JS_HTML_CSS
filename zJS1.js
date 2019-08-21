@@ -50,14 +50,14 @@ while(number<41)
     number+=2;
 }
 console.log("Print all odd numbers between 300 and 333");
-number = 301;// start 2 number;
+number = 301;// start 3 number;
 while(number<334)
 {
     console.log(number);
     number+=2;
 }
 console.log("Print all odd numbers between 300 and 333");
-number = 15;// start 2 number;
+number = 15;// start 4 number;
 while(number<51)
 {
     if(!(number % 5) && !(number % 3))
