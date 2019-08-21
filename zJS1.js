@@ -1,0 +1,1 @@
+alert("Hi there from JS FILE!");
