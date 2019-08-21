@@ -38,7 +38,7 @@ var number = -10; // start number;
 console.log("Print all numbers between -10 and 19");
 while(number<20)
 {
-    console.log("number");
+    console.log(number);
     number++;
 }
 
@@ -56,7 +56,7 @@ while(number<334)
     console.log(number);
     number+=2;
 }
-console.log("Print all odd numbers between 300 and 333");
+console.log("Print all numbers divisible by 5 AND 3 between 5 and 50");
 number = 15;// start 4 number;
 while(number<51)
 {
@@ -66,3 +66,32 @@ while(number<51)
     }
     number+=3;
 }
+
+//While Loops SET
+    // start 1 number -10;
+console.log("Print all numbers between -10 and 19");
+for(var i=-10; i<20; i++) 
+{
+    console.log(i);
+}
+    // start 2 number 10;
+console.log("Print all even numbers between 10 and 40");
+for(var i=10; i<41; i+=2)
+{
+    console.log(i);
+}
+    // start 3 number 301;
+console.log("Print all odd numbers between 300 and 333");
+for(var i=301; i<334; i+=2)
+{
+    console.log(i);
+}
+    // start 4 number 15;
+    console.log("Print all numbers divisible by 5 AND 3 between 5 and 50");
+    for(var i=15; i<50; i+=3)
+    {   
+        if(!(i%5) && !(i%3))
+        {
+            console.log(i);
+        }
+    }
