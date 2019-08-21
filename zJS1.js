@@ -30,3 +30,5 @@ while(guessNumber !== enterNumber)
         enterNumber = Number(prompt("Your number is larger than ours. Please, guess Number again: "));
     }
 }
+console.log("Silence WIN! First Always!");
+alert("YOU WIN");
