@@ -6,3 +6,5 @@ alert("Nice to meet you, " + userName);
 alert("You full name is: " + userName + " " + userSurname);
 console.log("Also great to meet with you " + userName);
 console.log("And I know your age. You are: " + userAge + " years old!");
+
+alert("You are alive in a planet: " + userAge*365.25 +" days!");
