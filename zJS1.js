@@ -124,3 +124,9 @@ function factorial(num) //factorial Example: 0!=1 num =5 return: 1*2*3*4*5=120;
         return fact;
     }
 }
+function kebabToSnake(str1)
+{
+   var str2 = str1.replace(/-/g, "_");
+            
+   return str2;
+}
