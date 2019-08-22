@@ -96,13 +96,31 @@ for(var i=301; i<334; i+=2)
         }
     }
 //Functions SET
-function isEven(num)
+
+function isEven(num) //isEven Example: if num = 22 return true else 31 33 1 25 = return false
 {
-    if(!(num%2)
+    if(!(num%2))
     {
         return true;
     }
     else {
         return false;
+    }
+}
+
+function factorial(num) //factorial Example: 0!=1 num =5 return: 1*2*3*4*5=120;
+{
+    var fact=1;
+    if(num==0)
+    {
+        return fact;
+    }
+    else
+    {
+        for(var i=2; i<=num; i++)
+        {
+            fact *=i;
+        }
+        return fact;
     }
 }
