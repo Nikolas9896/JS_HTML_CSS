@@ -95,3 +95,14 @@ for(var i=301; i<334; i+=2)
             console.log(i);
         }
     }
+//Functions SET
+function isEven(num)
+{
+    if(!(num%2)
+    {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
