@@ -16,29 +16,18 @@ while(input !=="quit")
    
     if(input === "list")
     {
-        console.log("*******************");   
-        todos.forEach(function(item, index)
-        {
-            console.log(index + " "+ item);    
-        });
-        console.log("*******************");
+        //show list of todo's items
+        listTodos();
         
     }
     else if (input ==="new")
     {
-        //ask for new todo
-        var newTodo = prompt("Enter new todo");
-        //add to todos array
-        todos.push(newTodo);
-        console.log("New todo's item is added!");
+       //add new todos
+       addTodos();
     }
     else if(input === "delete")
     {
-        //ask for index of todo's item
-       index = prompt("Enter index of todo to delete");
-       //delete one element
-       todos.splice(index, 1);
-       console.log(index + " item is deleted");
+      deleteTodos();
     }
     else if(input ==="help")
     {   //show help
@@ -51,3 +40,31 @@ while(input !=="quit")
     input = prompt("What would you like to do?");
 }
 console.log("TODO Application is closed!");
+
+function listTodos()
+{
+    console.log("*******************");   
+    todos.forEach(function(item, index)
+    {
+        console.log(index + " "+ item);    
+    });
+    console.log("*******************");
+}
+
+function addTodos()
+{
+     //ask for new todo
+     var newTodo = prompt("Enter new todo");
+     //add to todos array
+     todos.push(newTodo);
+     console.log("New todo's item is added!");
+}
+
+function deleteTodos()
+{
+      //ask for index of todo's item
+      index = prompt("Enter index of todo to delete");
+      //delete one element
+      todos.splice(index, 1);
+      console.log(index + " item is deleted");
+}
