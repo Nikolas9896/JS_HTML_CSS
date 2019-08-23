@@ -7,18 +7,31 @@
 
 console.log("WELCOME to TODO LIST!");
 
-var todos = ["Buy new turtle"];
-//ask what to do.
-var input = prompt("What would you like to do?");
-
-if(input === "list")
-{
-    console.log(todos);
+var todos = [];
+//ask what to do with help tip
+var input = prompt("What would you like to do? type \"help\" for information:");
+while(input !=="quit")
+{   //ask what to do
+   
+    if(input === "list")
+    {
+        console.log(todos);
+    }
+    else if (input ==="new")
+    {
+        //ask for new todo
+        var newTodo = prompt("Enter new todo");
+        //add to todos array
+        todos.push(newTodo);
+    }
+    else if(input ==="help")
+    {
+        console.log("HELP type:");
+        console.log("new - Add a Todo");
+        console.log("list - List all Todos");
+        console.log("quit - Close the application Todos");
+    }
+    //ask what to do
+    input = prompt("What would you like to do?");
 }
-else if (input ==="new")
-{
-    //ask for new todo
-    var newTodo = prompt("Enter new todo");
-    //add to todos array
-    todo.push(newTodo);
-}
+console.log("TODO Application is closed!");
