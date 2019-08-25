@@ -1,6 +1,6 @@
 var array1 = [23, -60, 34, 65, -200, 50];
 var array2 = [50, 50, 50, 50, 50, 50];
-var array3 = [50, "Super", "Man", 50, -23, 50];
+var array3 = [50, 50, 50,"Super", "Man", 50, -23, 50];
 
 function printReverse(array)
 {   
@@ -9,4 +9,20 @@ function printReverse(array)
     {
         console.log(array[i]);
     }
+}
+function isUniform(array)
+{
+    var firstElement=array[0];
+
+    for(i=1; i<array.length; i++)
+    {
+        if(firstElement!==array[i])
+        {   
+            console.log("The "+ i + " element is different");
+            return false;
+        }
+        
+    }
+    console.log("All elements are identical");
+            return true;
 }
