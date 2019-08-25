@@ -13,16 +13,14 @@ function printReverse(array)
 function isUniform(array)
 {
     var firstElement=array[0];
-
-    for(var i=1; i<array.length; i++)
-    {
-        if(firstElement!==array[i])
+    array.forEach(function(element){
+        if(element !== firstElement)
         {   
             console.log("The "+ i + " element is different");
             return false;
         }
-        
-    }
+    });
+   
     console.log("All elements are identical");
             return true;
 }
