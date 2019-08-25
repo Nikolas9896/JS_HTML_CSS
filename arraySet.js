@@ -1,4 +1,4 @@
-var array1 = [23, -60, 34, 65, -200, 50];
+var array1 = [23, -60, 34, 65, -200, 65, 66, 50];
 var array2 = [50, 50, 50, 50, 50, 50];
 var array3 = [50, 50, 50,"Super", "Man", 50, -23, 50];
 
@@ -28,11 +28,24 @@ function isUniform(array)
 }
 function sumArray(array)
 {
-    var sum=0;
-    for(var i=0; i < array.length; i++)
+    var sum = 0;
+    for(var i = 0; i < array.length; i++)
     {
         sum +=array[i];
     }
     console.log("The sum of array are: " + sum);
     return sum;
+}
+function max(array)
+{
+    var max = array[0];
+    for(var i = 1; i < array.length; i++)
+    {
+        if(max<array[i])
+        {
+            max = array[i];
+        }
+    }
+    console.log("The max element of array is: "+max);
+    return max;
 }
