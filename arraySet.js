@@ -14,7 +14,7 @@ function isUniform(array)
 {
     var firstElement=array[0];
 
-    for(i=1; i<array.length; i++)
+    for(var i=1; i<array.length; i++)
     {
         if(firstElement!==array[i])
         {   
@@ -25,4 +25,14 @@ function isUniform(array)
     }
     console.log("All elements are identical");
             return true;
+}
+function sumArray(array)
+{
+    var sum=0;
+    for(var i=0; i < array.length; i++)
+    {
+        sum +=array[i];
+    }
+    console.log("The sum of array are: " + sum);
+    return sum;
 }
