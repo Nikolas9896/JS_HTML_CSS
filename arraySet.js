@@ -1,0 +1,12 @@
+var array1 = [23, -60, 34, 65, -200, 50];
+var array2 = [50, 50, 50, 50, 50, 50];
+var array3 = [50, "Super", "Man", 50, -23, 50];
+
+function printReverse(array)
+{   
+    var maxIndex = array.length-1;
+    for(var i=maxIndex; i >= 0; i-- )
+    {
+        console.log(array[i]);
+    }
+}
